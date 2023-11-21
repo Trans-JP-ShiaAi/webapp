@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-base p-0 m-0 box-border;
+}
+
+input,
+select,
+textarea {
+  @apply outline-none;
+}
