@@ -1,0 +1,5 @@
+<div class="toast-body">
+    <div *ngIf="title" class="cti-toast-title" [innerHtml]="title"></div>
+    <div class="cti-toast-message" [innerHtml]="message"></div>
+  </div>
+  <span class="cti-icon-close toast-close" (click)="remove()"></span>

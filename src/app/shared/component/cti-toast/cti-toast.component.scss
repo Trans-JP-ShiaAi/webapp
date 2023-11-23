@@ -1,0 +1,111 @@
+
+
+:host {
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    background-color: var(--default-30);
+    border-radius: .25rem;
+    flex-direction: row;
+    max-width: 400px;
+  
+    font-weight: 400;
+    color: var(--default-90);
+  
+    &.toast-with-icon {
+      padding-left: 3.5rem;
+      &::before {
+        left: 1rem;
+        position: absolute;
+        font-size: 1.5rem;
+        color: var(--default-70);
+      }
+  
+      &::before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: var(--cti-icon-font-family) !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+  
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+  
+      &.cti-toast {
+        &-default {
+          background-color: var(--default-30);
+  
+          &::before {
+            content: var(--alert-icon-default);
+            color: var(--default-70);
+          }
+        }
+  
+        &-danger {
+          background-color: var(--danger-10);
+  
+          &::before {
+            content: var(--alert-icon-danger);
+            color: var(--danger);
+          }
+        }
+  
+        &-warning {
+          background-color: var(--warning-10);
+  
+          &::before {
+            content: var(--alert-icon-warning);
+            color: var(--warning);
+          }
+        }
+  
+        &-info {
+          background-color: var(--info-10);
+  
+          &::before {
+            content: var(--alert-icon-info);
+            color: var(--info);
+          }
+        }
+  
+        &-success {
+          background-color: var(--success-10);
+  
+          &::before {
+            content: var(--alert-icon-success);
+            color: var(--success);
+          }
+        }
+      }
+    }
+  
+    .toast-body {
+      flex: 1;
+      padding-right: 1.125rem;
+      .cti-toast-title {
+        font-weight: 700;
+        font-size: .875rem;
+        margin-bottom: .5rem;
+      }
+      .cti-toast-message {
+        .link {
+          font-weight: 500;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .toast-close {
+      cursor: pointer;
+  
+      &::before {
+        font-size: 1.5rem;
+      }
+    }
+  }

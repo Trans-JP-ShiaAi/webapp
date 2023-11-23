@@ -2,7 +2,14 @@
   "name": "css-flex",
   "version": "1.0.0",
   "author": "shuaib hasan akib",
-  "keywords": ["angular", "tailwindcss", "scss","angilar-tailwindcss", "flexbox", "css-flex"],
+  "keywords": [
+    "angular",
+    "tailwindcss",
+    "scss",
+    "angilar-tailwindcss",
+    "flexbox",
+    "css-flex"
+  ],
   "description": "Learn CSS Flexbox by clicking",
   "scripts": {
     "ng": "ng",
@@ -21,6 +28,10 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@auth0/angular-jwt": "^5.2.0",
+    "@ngrx/effects": "^17.0.0",
+    "@ngrx/store": "^17.0.0",
+    "ngx-toastr": "^18.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
